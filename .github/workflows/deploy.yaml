@@ -19,7 +19,7 @@ jobs:
             host: 13.52.181.108
             username: ubuntu
             key: ${{secrets.SSH_KEY}}
-            script: |
+            script: 
                cd /home/ubuntu/cicd-t1
                git pull
                echo hello world
