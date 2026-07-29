@@ -22,6 +22,7 @@ jobs:
             script: |
                cd /home/ubuntu/cicd-t1
                git pull
+               node -v
                npm i
                npm install pm2@latest -g
                pm2 start server.js
